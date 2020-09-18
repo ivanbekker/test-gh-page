@@ -1,0 +1,86 @@
+.we-ensure .title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 26px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+
+.we-ensure-wrap {
+  @media screen and (max-width: $tablet - 1) {
+    background-color: #f1f1f1;
+  }
+}
+.we-ensure-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    padding-left: 79px;
+    padding-right: 50px;
+    background-color: #f1f1f1;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+}
+
+.line-dashed .item:not(:last-child) {
+  border-left: 1px dashed $primary-text-color;
+}
+.we-ensure .item {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.667;
+
+  color: #3d3d3d;
+  span {
+    color: $accent-color;
+  }
+  &:not(:last-child) {
+    padding-bottom: 23px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 32px;
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 41px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.item.star::after {
+  content: '*';
+  color: $accent-color;
+}
+.we-ensure.item::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/campfire.svg);
+
+  @media screen and (min-width: $desktop) {
+    width: 22px;
+    height: 30px;
+  }
+}

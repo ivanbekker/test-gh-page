@@ -1,0 +1,153 @@
+.section.teacher {
+  padding-top: 0;
+  padding-bottom: 50px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 130px;
+  }
+}
+
+.teacher.title {
+  margin-bottom: 20px;
+  text-align: left;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+}
+.teacher-wrap {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1205px;
+  }
+}
+
+.teacher-photo {
+  max-width: none;
+}
+.teacher-achievment-box {
+  @media screen and (min-width: $tablet) {
+    margin-left: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
+}
+.teacher-name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+
+  color: $title-text-color;
+
+  @media screen and (max-width: $tablet - 1) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+}
+.teacher-achievment.list {
+  padding-top: 20px;
+  border-top: 1px solid $primary-text-color;
+}
+
+.teacher-achievment.item {
+  position: relative;
+  padding-left: 26px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.06em;
+
+  color: $title-text-color;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 59px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.teacher-achievment.item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/icon-check.svg);
+
+  @media screen and (min-width: $desktop) {
+    width: 24px;
+    height: 20px;
+  }
+}
+.decorate-line:before {
+  content: '';
+  display: block;
+  margin: 15px 0;
+  width: 20px;
+  height: 2px;
+  background-color: $accent-color;
+
+  @media screen and (min-width: $desktop) {
+    margin: 30px 0;
+  }
+}
+
+.teacher-achievment.desc {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.667;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.556;
+  }
+
+  &:last-of-type {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.certificate {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.667;
+  text-decoration-line: underline;
+  background-color: transparent;
+
+  color: $accent-color;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.556;
+  }
+}

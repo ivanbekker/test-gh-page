@@ -1,0 +1,219 @@
+/* Навигация*/
+
+header {
+  position: relative;
+  padding-top: 35px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 45px;
+  }
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 45px;
+    padding-right: 40px;
+  }
+}
+
+.logo-mob .icon {
+  @media screen and (min-width: $tablet) {
+    width: 130px;
+    height: 45px;
+  }
+}
+/*Список*/
+
+.header-nav {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header-nav-list {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header-nav-item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: $accent-color;
+}
+
+/* Кнопка Консультация*/
+
+.consultation-btn {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    width: 260px;
+    height: 48px;
+    margin-right: 45px;
+    border: 2px solid $accent-color;
+
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 48px;
+    color: $accent-color;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 60px;
+    width: 336px;
+    height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 68px;
+    cursor: pointer;
+  }
+}
+
+/* Кнопка-бургер */
+.menu-button,
+.menu-button-black {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: $white-color;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-button .icon-menu {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+/*.menu-button-black .icon-cross {
+  display: block;
+}
+.menu-button-black.is-open .icon-cross {
+  display: none;
+}
+*/
+
+/* Black меню*/
+
+.header-black {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  padding-top: 35px;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+  &.is-open {
+    display: block;
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+}
+
+.header-black-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 72px;
+  }
+}
+
+.header-black-list {
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+  width: 260px;
+
+  @media screen and (min-width: $tablet) {
+    width: 332px;
+  }
+}
+
+.header-black-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.black-line {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
+.black-line:hover,
+.black-line:focus {
+  color: $accent-color;
+}
+
+.consultation-black-btn {
+  display: block;
+  width: 260px;
+  height: 48px;
+  border: 2px solid $accent-color;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 48px;
+  color: $accent-color;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
